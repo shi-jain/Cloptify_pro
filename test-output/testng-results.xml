@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-04T16:13:28 IST" name="Suite" finished-at="2024-06-04T16:13:33 IST" duration-ms="4442">
+    <groups>
+    </groups>
+    <test started-at="2024-06-04T16:13:28 IST" name="Register" finished-at="2024-06-04T16:13:28 IST" duration-ms="11">
+    </test> <!-- Register -->
+    <test started-at="2024-06-04T16:13:28 IST" name="Signin" finished-at="2024-06-04T16:13:33 IST" duration-ms="4442">
+      <class name="TestCases.SigninTest">
+        <test-method is-config="true" signature="LaunchApp()[pri:0, instance:TestCases.SigninTest@6f36c2f0]" started-at="2024-06-04T16:13:28 IST" name="LaunchApp" finished-at="2024-06-04T16:13:31 IST" duration-ms="2755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method signature="signin()[pri:0, instance:TestCases.SigninTest@6f36c2f0]" started-at="2024-06-04T16:13:31 IST" name="signin" finished-at="2024-06-04T16:13:32 IST" duration-ms="1081" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dashboard] but found [Cloptify]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Dashboard] but found [Cloptify]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at TestCases.SigninTest.signin(SigninTest.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.SigninTest@6f36c2f0]" started-at="2024-06-04T16:13:33 IST" name="tearDown" finished-at="2024-06-04T16:13:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.SigninTest -->
+    </test> <!-- Signin -->
+  </suite> <!-- Suite -->
+</testng-results>
